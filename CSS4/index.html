@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS4</title>
+        <style>
+            .all-page-border {
+                border-style: double;
+            }
+            .main-logo {
+                margin-top: 40px;
+                text-align: center;
+                justify-content: center;
+            }
+            .flex-container {
+                display: flex;
+                justify-content: center;
+            }
+            #menu li {
+                display: inline;
+                padding: 15px;
+                font-family: "Courier New", Courier, monospace;
+            }
+            #menu {
+                border-bottom-style: groove ;
+                border-top: solid black;
+                padding: 15px;
+                margin: 0;
+            }
+            #main-red {
+                color: red;
+            }
+            .piano-logo {
+                justify-content: center;
+                padding: 20px;
+            }
+            #menu-paragraph {
+                padding: 0 200px 0 200px;
+                font-family: "Courier New", Courier, monospace;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="all-page-border">
+            <p class="main-logo"><img src="jpg/logo.gif"></p>
+            <div class="flex-container">
+                <ul id="menu">
+                    <li id="main-red"><a>PAGRINDINIS</a></li>
+                    <li><a>PARDAVIMAS</a></li>
+                    <li><a>REMONTAS</a></li>
+                    <li><a>APIE</a></li>
+                    <li><a>KONTAKTAI</a></li>
+                </ul>
+            </div>
+            <div class="flex-container piano-logo"><img src="jpg/keys.jpg"></div>
+            <p id="menu-paragraph">
+                Mes specializuojamės klasikinių klaviatūrų, ypač "Fender Rhodes", Wurlitzer EP200 ir Hohner Clavinet, pardavimu ir taisymu.
+            </p>
+        </div>
+    </body>
+</html>
