@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS5</title>
+    </head>
+    <body>
+
+        <script>
+
+            var name = 'name';
+            var surname = 'surname';
+            var sentenceEnd = 'ka tik prisijunge';
+
+            function nameSurnameLogin(name, surname, sentenceEnd){
+                var afterLogin = name + surname + sentenceEnd;
+                console.log(afterLogin);
+                // Nežinau kur deklaruoti, kad tap jų uzskaitytų &nbsp reikšmę, kai pripliusuoju var afterLogin įdeda tarp jų kaip string &nbsp..
+            }
+
+            nameSurnameLogin('Jonas', 'Jonaitis', 'ka tik prisijunge');
+        </script>
+
+    </body>
+</html>
