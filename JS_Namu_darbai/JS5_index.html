@@ -7,19 +7,26 @@
     </head>
     <body>
 
+        <button onclick="login();">Click</button>
+
+
         <script>
 
-            var name = 'name';
-            var surname = 'surname';
+            var name = 'Jonas';
+            var surname = 'Jonaitis';
             var sentenceEnd = 'ka tik prisijunge';
 
             function nameSurnameLogin(name, surname, sentenceEnd){
-                var afterLogin = name + surname + sentenceEnd;
-                console.log(afterLogin);
-                // Nežinau kur deklaruoti, kad tap jų uzskaitytų &nbsp reikšmę, kai pripliusuoju var afterLogin įdeda tarp jų kaip string &nbsp..
-            }
+                var afterLogin = name + ' ' + surname + ' ' + sentenceEnd;
+                return afterLogin;
+                // Pataisiau naudodamas JS4 kaip pavizdi, bandziau delioti nbsp visur gaunu tik klaidas. Nu zodziu kazka sugalvosiu.
 
-            nameSurnameLogin('Jonas', 'Jonaitis', 'ka tik prisijunge');
+            }
+            function login() {
+                var afterLogin = nameSurnameLogin(name, surname, sentenceEnd)
+//                console.log(afterLogin.join('&nbsp'));
+
+            }
         </script>
 
     </body>
