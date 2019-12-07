@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS10</title>
+    </head>
+    <body>
+
+        <script>
+
+            var firstObject = {"id":1,
+                             "item":"Atsuktuvas",
+                             "date":"2018",
+                             "color":"geltona",
+                             "price": "5"};
+
+            var secondObject = {"id":2,
+                             "item":"Raktas",
+                             "date":"2018",
+                             "color":"pilka",
+                             "price": "2"};
+            var objectArray = [firstObject,secondObject];
+            var frstWordText = ['#', 'Prekė', 'Pagaminimo data', 'Spalva', 'Kaina'];
+
+            function showingAtConsole (objectArray) {
+                for (var i = 0; i < objectArray.length; i++) {
+                    var secondArray = objectArray.length[i];
+                    for (var j = 0; j < secondArray; j++) {
+                        if (j == 0) {
+                            console.log(frstWordText[j] + objectArray[i][j])
+                        } else {
+                            console.log(frstWordText[j] + ' ' + array[i][j])
+                        }
+                    }
+                }
+            };
+
+            showingAtConsole(objectArray);
+            console.log(objectArray);
+
+        </script>
+
+
+    </body>
+</html>
