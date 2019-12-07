@@ -7,25 +7,18 @@
 </head>
 <body>
 
-
     <script>
 
         var namesThatWillBeShown = ['Jonas', 'Petras', 'Martynas', 'Ona', 'Urtė', 'Ema'];
-        var nameThatWillNotBeShown = ['Kazimieras'];
-        var allListNames = namesThatWillBeShown.concat(nameThatWillNotBeShown);
-        console.log(allListNames);
+        var TheNameThatWillNotBeShown = ['Kazimieras', 'Jonas', 'Andrius', 'Petras', 'Juozas'];
 
-        function finalResult (allListNames) {
-            var allListNames = namesThatWillBeShown.concat(nameThatWillNotBeShown);
-
-            allListNames.splice(6);
-
-
-            console.log(allListNames);
+        function finalResult (newArray, name) {
+            var removeName = newArray.indexOf(name);
+            newArray.splice(removeName, 1);
+            console.log(newArray);
 
         }
-
-        finalResult();
+        finalResult(TheNameThatWillNotBeShown, 'Jonas')
 
     </script>
 
